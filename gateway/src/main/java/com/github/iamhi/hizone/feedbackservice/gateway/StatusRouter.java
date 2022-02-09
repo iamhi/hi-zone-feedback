@@ -18,4 +18,11 @@ public class StatusRouter {
         return route(GET(ROUTER_PREFIX + "/ping"), serverRequest ->
             ServerResponse.ok().bodyValue("pong"));
     }
+
+    @Bean
+    public RouterFunction<ServerResponse> welcomeRoute() {
+        return route(GET(ROUTER_PREFIX + "/welcome"), serverRequest ->
+            ServerResponse.ok().render("welcome")
+        );
+    }
 }
