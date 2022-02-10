@@ -22,5 +22,11 @@
             <artifactId>feedback-service-api</artifactId>
             <version>${project.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.github.iamhi.hizone</groupId>
+            <artifactId>feedback-service-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 </project>
