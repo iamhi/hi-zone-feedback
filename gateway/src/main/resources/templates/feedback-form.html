@@ -4,13 +4,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link th:href="@{/styles/main.css}" rel="stylesheet" />
     <title>Feedback</title>
 </head>
     <body>
-        <div>
-            <h2>Welcome to</h2>
-            <h1>Hi-Zone</h1>
-            <h2>feedback</h2>
+        <div class="feedback-header">
+            <h1 class="feedback-header__title">Hi-Zone</h1>
+            <h2 class="feedback-header__subtitle">feedback</h2>
         </div>
 
         <form
@@ -18,25 +18,32 @@
                 action="/hi-zone-api/feedback"
                 enctype="application/x-www-form-urlencoded"
                 autocomplete="off"
-                method="post">
-            <label for="feedback-textarea">
+                method="post"
+                class="feedback-form">
+            <label for="feedback-textarea" class="feedback-form__label">
                 Feedback:
                 <textarea
                         id="feedback-textarea"
                         name="feedback"
                         required="required"
-                        placeholder="Enter your feedback"></textarea>
+                        placeholder="Enter your feedback"
+                        rows="7"
+                        class="feedback-form__label__input feedback-form__label__input--textarea"></textarea>
             </label>
-            <label for="contact-info-input">
+            <label for="contact-info-input" class="feedback-form__label">
                 Contact info:
                 <input
                         type="text"
                         id="contact-info-input"
                         name="contact-info"
-                        placeholder="Leave contact info to keep in touch"/>
+                        placeholder="Leave contact info to keep in touch"
+                        class="feedback-form__label__input feedback-form__label__input--input" />
             </label>
-            <input type="submit" value="Submit"/>
-            <input type="reset" value="Reset"/>
+
+            <div class="feedback-form__button-container">
+                <input type="submit" value="Submit" class="feedback-form__button-container__button feedback-form__button-container__button--submit"/>
+                <input type="reset" value="Reset" class="feedback-form__button-container__button feedback-form__button-container__button--reset"/>
+            </div>
         </form>
     </body>
 </html>
