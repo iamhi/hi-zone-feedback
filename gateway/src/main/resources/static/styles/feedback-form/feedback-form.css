@@ -14,6 +14,7 @@
   font-weight: bold;
   width: 40em;
   max-width: 90%;
+	text-shadow: 2px 2px 0 var(--secondary-color-2), -2px -2px 0 var(--secondary-color-1);
 }
 
 .feedback-form__label__input {
@@ -33,15 +34,15 @@
   resize: none;
   border-radius: 0.8em;
   padding: 0.5em;
-  border: 1px solid black;
   font-size: 1.2em;
+	border: 1px solid var(--primary-color-3);
 }
 
 .feedback-form__label__input--input {
   border-radius: 0.8em;
   padding: 0.5em;
-  border: 1px solid black;
   font-size: 0.8em;
+  border: 1px solid var(--primary-color-3);
 }
 
 .feedback-form__button-container {

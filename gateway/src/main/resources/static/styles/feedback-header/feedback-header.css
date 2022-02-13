@@ -1,8 +1,6 @@
 .feedback-header {
   text-align: center;
   height: min-content;
-
-	text-shadow: 4px 4px 0 var(--secondary-color-2), -4px -4px 0 var(--secondary-color-1);
 }
 
 .feedback-header__title {
